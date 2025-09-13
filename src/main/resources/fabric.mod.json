@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "example-mod",
+	"version": "0.0.1a-1.20.1",
+	"name": "Example Mod",
+	"description": "1",
+	"authors": [
+		"T123MINECRAFT"
+	],
+	"contact": {
+		"sources": "https://github.com/T123MINECRAFT/Example-Mod",
+        "issues": "https://github.com/T123MINECRAFT/Example-Mod/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/example-mod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"com.t123minecraft.example.ExampleMod"
+		],
+		"fabric-datagen": [
+			"com.t123minecraft.example.ExampleModDataGenerator"
+		],
+        "client": [
+            "com.t123minecraft.example.ExampleModClient"
+        ]
+	},
+	"mixins": [
+		"example-mod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
